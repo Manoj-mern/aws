@@ -7,56 +7,55 @@ cd /var/www/html
 sudo rm -rf *
 
 # Create HTML page
-echo"<!DOCTYPE html>">>index.html
-echo"<html lang="en">">>index.html
-echo"<head>">>index.html
-echo"<meta charset="UTF-8">">>index.html    
-echo"<meta name="viewport" content="width=device-width, initial-scale=1.0">">>index.html    
-echo"<title>basic html format</title>">>index.html   
-echo"<style>">>index.html   
-echo"body{background-color: aquamarine;}">>index.html            
-echo".maincontainer{">>index.html      
-echo"/* border: 2px solid lightgreen; */">>index.html        
-echo"border-radius: 10px;">>index.html          
-echo"height: 500px;">>index.html            
-echo"width: 450px;">>index.html            
-echo"margin: 100px auto;">>index.html           
-echo"display: flex;">>index.html           
-echo"justify-content:start;">>index.html            
-echo"align-items:start;">>index.html            
-echo"flex-direction: column;">>index.html           
-echo"box-shadow: 30px 30px -20px 20px rgb(47, 103, 208);">>index.html           
-echo"background-color: rgb(174, 174, 245);}">>index.html           
-echo"">>index.html       
-echo".title{">>index.html       
-echo"text-decoration: underline;">>index.html           
-echo"width: inherit;">>index.html          
-echo"text-align: center;}">>index.html                
-echo".data{">>index.html      
-echo" height: 60px;">>index.html          
-echo"width: inherit;">>index.html         
-echo"display: flex;">>index.html           
-echo"flex-direction: row;">>index.html           
-echo"justify-content: space-between;">>index.html           
-echo"align-items: center;}">>index.html                
-echo".data h2{">>index.html      
-echo"width: 200px;">>index.html          
-echo"padding-left: 10px;}">>index.html                
-echo".data p{">>index.html       
-echo"width: 50%;">>index.html          
-echo"height: 60px;">>index.html         
-echo"}">>index.html    
-echo"</style>">>index.html  
-echo"</head>">>index.html
-echo"<body>">>index.html
-echo"<div class="maincontainer"></div>">>index.html    
-echo"<h1 class="title">Bio data</h1>">>index.html        
-echo"<div class="data"><h2 class="n1">Name:</h2><p>Manoj Kumar</p></div>">>index.html       
-echo"<div class="data"><h2>Graduation:</h2><p>B.Tech</p></div>">>index.html        
-echo"<div class="data"><h2>Stream:</h2><p>CSE</p></div>">>index.html        
-echo"<div class="data"><h2>Graduation Year:</h2><p>2024</p></div>">>index.html      
-echo"<div class="data"><h2>Technical skills:</h2><p>JS,C,NodeJS,ExpressJS</p></div>">>index.html      
-echo"</div>">>index.html 
-echo"</body>">>index.html
-echo"</html>">>index.html
+echo"<!DOCTYPE html>" >> index.html
+echo"<html lang="en">" >> index.html
+echo"<head>" >> index.html
+echo"<meta charset="UTF-8">" >> index.html    
+echo"<meta name="viewport" content="width=device-width, initial-scale=1.0">" >> index.html    
+echo"<title>basic html format</title>" >> index.html   
+echo"<style>" >> index.html   
+echo"body{background-color: aquamarine;}" >> index.html            
+echo".maincontainer{" >> index.html      
+echo"/* border: 2px solid lightgreen; */" >> index.html        
+echo"border-radius: 10px;" >> index.html          
+echo"height: 500px;" >> index.html            
+echo"width: 450px;" >> index.html            
+echo"margin: 100px auto;" >> index.html           
+echo"display: flex;" >> index.html           
+echo"justify-content:start;" >> index.html            
+echo"align-items:start;" >> index.html            
+echo"flex-direction: column;" >> index.html           
+echo"box-shadow: 30px 30px -20px 20px rgb(47, 103, 208);" >> index.html           
+echo"background-color: rgb(174, 174, 245);}" >> index.html                 
+echo".title{" >> index.html       
+echo"text-decoration: underline;" >> index.html           
+echo"width: inherit;" >> index.html          
+echo"text-align: center;}" >> index.html                
+echo".data{" >> index.html      
+echo" height: 60px;" >> index.html          
+echo"width: inherit;" >> index.html         
+echo"display: flex;" >> index.html           
+echo"flex-direction: row;" >> index.html           
+echo"justify-content: space-between;" >> index.html           
+echo"align-items: center;}" >> index.html                
+echo".data h2{" >> index.html      
+echo"width: 200px;" >> index.html          
+echo"padding-left: 10px;}" >> index.html                
+echo".data p{" >> index.html       
+echo"width: 50%;" >> index.html          
+echo"height: 60px;" >> index.html         
+echo"}" >> index.html    
+echo"</style>" >> index.html  
+echo"</head>" >> index.html
+echo"<body>" >> index.html
+echo"<div class="maincontainer"></div>" >> index.html    
+echo"<h1 class="title">Bio data</h1>" >> index.html        
+echo"<div class="data"><h2 class="n1">Name:</h2><p>Manoj Kumar</p></div>" >> index.html       
+echo"<div class="data"><h2>Graduation:</h2><p>B.Tech</p></div>" >> index.html        
+echo"<div class="data"><h2>Stream:</h2><p>CSE</p></div>" >> index.html        
+echo"<div class="data"><h2>Graduation Year:</h2><p>2024</p></div>" >> index.html      
+echo"<div class="data"><h2>Technical skills:</h2><p>JS,C,NodeJS,ExpressJS</p></div>" >> index.html      
+echo"</div>" >> index.html 
+echo"</body>" >> index.html
+echo"</html>" >> index.html
 sudo service httpd start
