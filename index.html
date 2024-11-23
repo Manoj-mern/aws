@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .maincontainer{
+            /* border: 2px solid lightgreen; */
+            border-radius: 10px;
+            height: 500px;
+            width: 450px;
+            margin: 100px auto;
+            display: flex;
+            justify-content:start;
+            align-items:start;
+            flex-direction: column;
+            box-shadow: 30px 30px -20px 20px rgb(47, 103, 208);
+            background-color: rgb(174, 174, 245);
+        }
+        .title{
+            text-decoration: underline;
+            width: inherit;
+            text-align: center;
+        }
+        .data{
+            /* border: 2px solid blue; */
+            height: 60px;
+            width: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .data h2{
+            /* border: 2px solid red; */
+            width: 200px;
+            padding-left: 10px;
+        }
+        .data p{
+            /* border: 2px solid green; */
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <h1 class="title">Bio data</h1>
+        <div class="data"><h2 class="n1">Name:</h2><p>Manoj Kumar</p></div>
+        <div class="data"><h2>Graduation:</h2><p>B.Tech</p></div>
+        <div class="data"><h2>Stream:</h2><p>CSE</p></div>
+        <div class="data"><h2>Graduation Year:</h2><p>2024</p></div>
+        <div class="data"><h2>Technical skills:</h2><p>JS,C,NodeJS,ExpressJS</p></div>
+    </div>
+
+</body>
+</html>
